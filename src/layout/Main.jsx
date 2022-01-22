@@ -1,4 +1,6 @@
+import { Container } from '@mui/material';
 import React, { useEffect, useState } from 'react';
+import CharactersList from '../components/CharactersList';
 
 const Main = () => {
 
@@ -17,7 +19,7 @@ const Main = () => {
             })
             .catch(err => {
                 console.log(err)
-                this.setState({ loading: false})
+                setLoading(false)
             })
     console.log('component did mount');
   }, []);
@@ -25,7 +27,10 @@ const Main = () => {
 
   return (
     <main>
-
+    
+      <Container maxWidth="xl" sx={{p: 10, color:"#fff"}}>
+          <CharactersList characters={characters}/>
+      </Container>
     </main>
   )
 };

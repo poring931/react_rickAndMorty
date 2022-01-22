@@ -15,3 +15,18 @@ main{
   background-color:rgb(36, 40, 47);
   min-height: calc(100vh - 48px - 32px);
 }
+
+.characters_list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+ .status__icon {
+    height: 0.5rem;
+    width: 0.5rem;
+    margin-right: 0.5rem;
+    background: rgb(85, 204, 68);
+    border-radius: 50%;
+    display: inline-block;
+}

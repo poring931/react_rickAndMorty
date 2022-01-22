@@ -10,7 +10,7 @@ const Footer = () => {
     <footer variant="dense">
 
       <Box  sx={{backgroundColor: "#1976d2", display:  "flex", color: '#fff'}}>
-            <Link sx={{ mx: 'auto' }} variant="h6" color="inherit" component="a" href="#">Репозиторий</Link>
+            <Link sx={{ mx: 'auto' }} variant="h6" color="inherit" component="a" target="_blank" href="https://github.com/poring931/react_rickAndMorty">Репозиторий</Link>
       </Box>
     </footer>
   );

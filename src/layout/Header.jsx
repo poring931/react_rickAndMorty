@@ -21,7 +21,7 @@ const Header = () => {
           <Typography sx={{ mr: 'auto' }} variant="h6" color="inherit" component="div">
             Rick and Morty 
           </Typography>
-          <Link sx={{ ml: 'auto' }} variant="h6" color="inherit" component="a" href="#">Репозиторий</Link>
+          <Link sx={{ ml: 'auto' }} variant="h6" color="inherit" component="a" target="_blank" href="https://github.com/poring931/react_rickAndMorty">Репозиторий</Link>
 
         </Toolbar>
       </AppBar>
