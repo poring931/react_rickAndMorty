@@ -4,8 +4,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Filter = (props) => {
     const changeHandler = (e) =>{
-        console.log(e.target.value);
-        console.log(e.target.name);
+    
         props.filter(e.target.name,e.target.value)
     }
 

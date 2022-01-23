@@ -26,7 +26,15 @@ main {
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 20px;
 }
+.characters_list img{
+ 
+}
+@media (max-width:600px){
+  .characters_list {
 
+     justify-items: center; 
+}
+}
 .status__icon {
   height: 0.5rem;
   width: 0.5rem;

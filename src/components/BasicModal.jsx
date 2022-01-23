@@ -20,7 +20,6 @@ export default function BasicModal(props) {
   const [open, setOpen] = React.useState(false);
 
     const handleOpen = () => {
-        console.log(props);
         setOpen(true);
     }
 
