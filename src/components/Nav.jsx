@@ -23,8 +23,8 @@ const Nav = (props) => {
         ) : ''
       }
         <div className='currentPage'>
-            {props.currentPage} <br />
-            <small style={{fontSize:'10px'}}>current</small>
+            {props.currentPage} / {props.pagesInfo.pages} <br />
+            <small style={{fontSize:'10px'}}>{props.pagesInfo.count}</small>
         </div>
       {
         next ? (
