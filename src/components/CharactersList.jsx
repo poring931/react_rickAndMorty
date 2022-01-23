@@ -6,7 +6,6 @@ const CharactersList = (props) => {
 
 
   return <div className='characters_list'>
-      {console.log(props)}
       {
         characters.length ?
             characters.map(character=>(

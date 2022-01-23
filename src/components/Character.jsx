@@ -1,5 +1,6 @@
 import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material';
 import React from 'react';
+import BasicModal from './BasicModal';
 
 const Character = (props) => {
    return (
@@ -17,7 +18,7 @@ const Character = (props) => {
 
         <Typography gutterBottom  component="div" >
           <Typography gutterBottom variant="h6" component="span" >
-          <span className="status__icon"></span> {`${props.status} - `} 
+          <span className={`status__icon ${props.status}`}></span> {`${props.status} - `} 
           </Typography>
           <Typography gutterBottom variant="h7" component="span" >
             <em> {props.species} </em> 
@@ -28,13 +29,14 @@ const Character = (props) => {
         </Typography>
 
         <Typography variant="body2" component="div" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+            <b>First seen in: </b> {props.location.name} <br />
+            <b>Origin: </b> {props.origin.name}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Learn More</Button>
+        <BasicModal character={props}/>
       </CardActions>
+      
     </Card>
   );
 };
